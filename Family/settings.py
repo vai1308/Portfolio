@@ -23,10 +23,12 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-a*7m4r!63k8kw-4kj7ph@q3g7$t@ly)3dsaxcbwt=8elr+ix4s'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['vai1308.github.io']
 
+# Added manually
+OPTIONS = {"directory_listing": False}
 
 # Application definition
 
