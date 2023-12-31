@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-a*7m4r!63k8kw-4kj7ph@q3g7$t@ly)3dsaxcbwt=8elr+ix4s
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['vai1308.github.io']
+ALLOWED_HOSTS = ['*']
 
 # Added manually
 OPTIONS = {"directory_listing": False}
