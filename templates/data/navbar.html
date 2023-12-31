@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+        li {
+            float: left;
+        }
+        li a {
+            background-color: crimson;
+            display: flex;
+            color:cornsilk;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        li a:hover {
+            background-color:darkolivegreen;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href="{% url "index" %}">HOME</a></li>
+        <li><a href="{% url "About" %}">ABOUT</a></li>
+        <li><a href="{% url "Projects" %}">PROJECTS</a></li>
+        <li><a href="{% url "Contact" %}">CONTACT</a></li>
+        <li><a href="static/RESUME.docx">RESUME</a></li>
+    </ul>
+    {% block body %}{% endblock body %}
+</body>
+</html>

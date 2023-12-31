@@ -1,0 +1,54 @@
+{% extends "data/navbar.html" %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    {% block body %}
+    <style>
+        body{
+            background-color: antiquewhite;
+        }
+        form{
+            background-color: rgba(183, 178, 178, 0.498);
+            display: block;
+            width: 40%;
+        }
+        button{
+            background-color: blue;
+            color: wheat;
+            width: 80px;
+            height: 40px;
+            font-size:medium;
+        }
+        input{
+            height: 40px;
+            width: 90%;
+        }
+        textarea{
+            width: 90%
+        }
+        label{
+            font-size: large;
+        }
+    </style>
+</head>
+<body>
+    <h1>CONTACT</h1>
+    My contact details are given below:
+    <p>Phone: 9122607394<br>WhatsApp: 9122607394<br>Email: vaibhavgautam801@gmail.com<br>LinkedIn: <a href="https://www.linkedin.com/in/vaibhav-gautam-sde">https://www.linkedin.com/in/vaibhav-gautam-sde</a><br>GitHub: <a href="https://github.com/vai1308">https://github.com/vai1308</a></p>
+    <form action="https://thankyou-three.vercel.app/">
+        <label for="name">Name</label><br>
+        <input type="text"><br><br>
+        <label for="email">E-mail</label><br>
+        <input type="text"><br><br>
+        <label for="phone">Phone</label><br>
+        <input type="text"><br><br>
+        <label for="message">Message</label><br>
+        <textarea name="message" id="message" cols="50" rows="8"></textarea><br><br>
+        <button>Submit</button><br>
+    </form>
+    {% endblock body %}
+</body>
+</html>

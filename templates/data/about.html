@@ -1,0 +1,83 @@
+{% extends "data/navbar.html" %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    {% block body %}
+    <style>
+        body{
+            background-color:aquamarine;
+        }
+        h1{
+            font-family:cursive;
+            color:maroon;
+            text-align: center;
+            background-color: cornsilk;
+        }
+        .experience{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color:whitesmoke;
+            position: relative;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <h1>ABOUT</h1>
+    <p>In this section, I am adding some more information about me.<br>I am Vaibhav Gautam, a B.Tech student in Noida International University. In this portfolio, I have added my resume and projects. I am an enthusiastic software engineer with a passion to grow and excel in my career.</p>
+    <p>My skills are listed below:</p>
+    <strong>Programming Languages</strong>
+    <ul>
+        <li>Python</li>
+        <li>C</li>
+        <li>Java</li>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+    </ul>
+    <strong>Domains</strong>
+    <ul>
+        <li>Web Development</li>
+        <li>Data Science</li>
+        <li>Responsive Web Design</li>
+    </ul>
+    <strong>Other Skills</strong>
+    <ul>
+        <li>Git</li>
+        <li>GitHub</li>
+        <li>Financial Analysis</li>
+        <li>Presentation Skills</li>
+        <li>Problem Solving</li>
+        <li>MS PowerPoint</li>
+        <li>MS Word</li>
+        <li>MS Excel</li>
+    </ul>
+    <p>My extra curricular activities are also listed below:</p>
+    <ul class="experience">
+        <li>J.P. Morgan Software Engineering Virtual Experience on Forage - November 2023</li>
+    </ul>
+    <p>My responsibilities in the Virtual Experience were as follows:</p>
+    <ul>
+        <li>Set up a local dev environment by downloading the necessary files, tools and dependencies.</li><br>
+        <li>Fixed broken files in the repository to make web application output correctly.</li><br>
+        <li>Used JPMorgan Chase's open-source library called Perspective and Python to generate a live graph that displays a data feed in a clear and visually appealing way for traders to monitor.</li><br>
+    </ul>
+    <br>
+    <ul class="experience">
+        <li>Accenture North America Data Analytics and Visualization Job Simulation on Forage - December 2023</li>
+    </ul>
+    <p>My achievements in the job simulation are given below:</p>
+    <ul>
+        <li>Completed a simulation focused on advising a hypothetical social media client as a Data Analyst at Accenture.</li><br>
+        <li>Cleaned, modelled and analyzed 7 datasets to uncover insights into content trends to inform strategic decisions.</li><br>
+        <li>Prepared a PowerPoint deck and video presentation to communicate key insights for the client and internal stakeholders.</li><br>
+    </ul>
+    <p>To know more about me or to reach me with available opportunities, you can contact me using the details given in the contact section.</p>
+    {% endblock body %}
+</body>
+</html>
