@@ -2,7 +2,7 @@ from django.shortcuts import render, HttpResponse, redirect
 
 # Create your views here.
 def index(request):
-    return render(request, 'data/main.html')
+    return render(request, 'data/index.html')
 def contact(request):
     return render(request, 'data/contact.html')
 def projects(request):
@@ -11,6 +11,3 @@ def about(request):
     return render(request, 'data/about.html')
 def thankyou(request):
     return render(request, 'data/thankyou.html')
-def submit_form(request):
-    if request.method == 'POST':
-        return redirect('thankyou')
