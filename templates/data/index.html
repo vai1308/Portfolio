@@ -29,7 +29,8 @@
     </style>
 </head>
 <body>
-    <img src="static/My_Image.jpg" alt="VAIBHAV GAUTAM" width="200" height="200">
+    {% load static %}
+    <img src="{% static "images/My_Image.jpg" %}" alt="VAIBHAV GAUTAM" width="200" height="200">
     <h1>VAIBHAV GAUTAM</h1>
     <p>Hi! I am Vaibhav Gautam. I am a web developer and a python programmer. <br>This is my portfolio and it gives brief explanation of my profession.</p>
     {% endblock body %}
