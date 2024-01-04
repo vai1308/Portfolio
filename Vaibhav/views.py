@@ -1,8 +1,10 @@
 from django.shortcuts import render, HttpResponse, redirect
+from datetime import datetime
 
 # Create your views here.
 def index(request):
-    return render(request, 'data/index.html')
+    current_time = datetime.now()
+    return render(request, 'data/index.html', {'current_time': current_time})
 def contact(request):
     return render(request, 'data/contact.html')
 def projects(request):

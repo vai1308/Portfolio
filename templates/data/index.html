@@ -26,9 +26,15 @@
             background-repeat: no-repeat;
             background-size: cover;
         }
+        #datetime{
+            color: cornsilk;
+            background-color: crimson;
+            display: inline-block;
+        }
     </style>
 </head>
 <body>
+    <div id="datetime">{{ current_time }}</div>
     {% load static %}
     <img src="{% static "images/My_Image.jpg" %}" alt="VAIBHAV GAUTAM" width="200" height="200">
     <h1>VAIBHAV GAUTAM</h1>
