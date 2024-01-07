@@ -1,0 +1,57 @@
+{% extends "data/navbar.html" %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% block body %}
+    <title>Portfolio</title>
+    <style>
+        body{
+            background-image: url(https://takeoffprojects.com/assets/images/banner4a.webp);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .list {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            position: relative;
+            display: inline-block;
+        }
+        .li{
+            display: inline-block;
+            line-height: 40px;
+        }
+        .li a {
+            display: flex;
+            color:cornsilk;
+            padding: 14px 16px;
+            text-decoration: none;
+            background-color:rgba(102, 15, 223, 0.685);
+        }
+        .li a:hover {
+            background-color:rgba(211, 20, 128, 0.61);
+        }
+        #project{
+            padding-right: 50%;
+        }
+    </style>
+</head>
+<body>
+    <p>Hello<br>As we all know that projects are the most important part of a software engineer's portfolio. So, I am adding some of my projects' source codes below.<br>Please have a look at them.</p>
+    <br>
+    <p><ul class="list">
+        <li class="li"><a href="https://github.com/vai1308/RockPaperScissor" class="a">Rock Paper Scissors Game</a></li><br>
+    </ul><br>
+        <div id="project">A python program built using math module, various python built in functions, user defined functions and module/library functions. This program is built to solve 14 different mathematical problems such as arithmetic, trigonometric, exponential and factorial problems.</div> <br>
+    </p><br>
+    <p><ul class="list">
+        <li class="li"><a href="https://github.com/vai1308/Calculator" id="secondLink">Calculator</a></li>
+    </ul><br>
+        <div id="project">A python program that includes the use of random library for computer to generate a choice using artificial intelligence (AI) and various basic applications of python language like conditional statements, etc.</div> <br>
+    </p>
+    {% endblock body %}
+</body>
+</html>

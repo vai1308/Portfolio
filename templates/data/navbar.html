@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            margin: 0;
+        }
+        ul{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+        li {
+            float: left;
+        }
+        li a {
+            background-color: crimson;
+            display: flex;
+            color:cornsilk;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        li a:hover {
+            background-color:darkolivegreen;
+        }
+        #datetime{
+            color: cornsilk;
+            background-color: crimson;
+            display: inline-block;
+            width: 13%;
+            height: 30px;
+        }
+        footer{
+            margin-top: auto;
+            background-color: black;
+            color: whitesmoke;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href="{% url "index" %}">HOME</a></li>
+        <li><a href="{% url "About" %}">ABOUT</a></li>
+        <li><a href="{% url "Projects" %}">PROJECTS</a></li>
+        <li><a href="{% url "Contact" %}">CONTACT</a></li>
+        <li><a href="static/RESUME.docx">RESUME</a></li>
+    </ul>
+    <div id="datetime">{{ current_time }}</div>
+    {% block body %}{% endblock body %}
+    <footer>
+        A webpage designed by Vaibhav Gautam
+    </footer>
+</body>
+</html>
