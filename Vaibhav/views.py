@@ -14,5 +14,12 @@ def projects(request):
 def about(request):
     current_time = datetime.now()
     return render(request, 'data/about.html', {'current_time': current_time})
+=======
+    return render(request, 'data/contact.html')
+def projects(request):
+    return render(request, 'data/projects.html')
+def about(request):
+    return render(request, 'data/about.html')
+>>>>>>> d49edab41c65b3d523d2a55c2316f724584d9369
 def thankyou(request):
     return render(request, 'data/thankyou.html')
