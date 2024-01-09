@@ -22,6 +22,7 @@
             width: 80px;
             height: 40px;
             font-size:medium;
+            cursor: pointer;
         }
         input{
             height: 40px;
@@ -57,7 +58,7 @@
         <label for="message">Message<span>*</span></label><br>
         <textarea name="message" id="message" cols="50" rows="8"></textarea><br><br>
         {% csrf_token %}
-        <button onclick="nameInput();emailInput();phoneInput();messageInput()">Submit</button><br>
+        <button>Submit</button><br>
     </form>
     <script>
         function validateForm() {
