@@ -8,17 +8,18 @@
     <title>Portfolio</title>
     <style>
         h1{
-            padding: 0 450px 0 550px;
+            text-align: center;
             color:crimson;
         }
         p{
-            padding: 0 400px;
+            text-align: center;
             color:azure;
         }
-        img{
+        img {
+            max-width: 100%;
+            height: auto;
             display: block;
-            margin-right: auto;
-            margin-left: auto;
+            margin: 0 auto;
             border-radius: 50%;
         }
         body{
@@ -30,6 +31,14 @@
             color: cornsilk;
             background-color: crimson;
             display: inline-block;
+        }
+        @media only screen and (max-width: 600px) {
+            h1 {
+                padding: 0 5%;
+            }
+            p {
+                padding: 0 5%;
+            }
         }
     </style>
 </head>
