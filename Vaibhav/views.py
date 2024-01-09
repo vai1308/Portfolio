@@ -15,4 +15,4 @@ def about(request):
     current_time = datetime.now()
     return render(request, 'data/about.html', {'current_time': current_time})
 def thankyou(request):
-    return render(request, 'thankyou.html')
+    return render(request, 'data/thankyou.html')
