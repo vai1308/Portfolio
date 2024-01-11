@@ -86,8 +86,13 @@
                 alert("Enter Your Message");
                 return false;
             }
-
-            return true;
+            else{
+                name.innerText = '';
+                email.innerText = '';
+                phone.innerText = '';
+                message.innerText = '';
+                return true;
+            }
         }
     </script>
     {% endblock body %}
